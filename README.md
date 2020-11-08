@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +67,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+
+De olika tekniker jag använt vid skapandet av mim app är:
+
+react
+socket.io-client
+http-server
+
+Valet av ramverk för projektet föll på React, då jag tidigare använde detta ramverket i kursen. För att nämna några saker jag upptäckte under kursens gång i just React, använde jag mig av tekniker som:
+
+att hantera data i states och localStorage
+två olika sätta att fetcha, antingen genom konstanter eller .then
+att hantera flera olika requests samtidigt
+hur man både skapar och och stoppar sockets för en bättre användarupplevelse
+och så klart många andra saker
+
+Socket.io-client användes för att kunna skicka data mellan socket servern och frontend i realtime.
+
+Http-server användes för att lättare kunna köra koden lokalt vid utvecklingen av appen.
+
+Jag har helt enkelt inte behövt använda mig av en uppsjö av tekniker just för frontend. React sköter mycket av jobbet och har en mängd moduler som hjälper oss. Att helt enkelt förstå och använda sig av tekniker i React var den stora utamningen här.
