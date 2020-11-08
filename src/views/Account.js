@@ -6,7 +6,7 @@ class Account extends React.Component {
   };
 
   async componentDidMount() {
-    const url = "http://localhost:8333/accounts";
+    const url = "https://proj-api.frah19.me/accounts";
     const response = await fetch(url, {method: "GET", headers: {'x-access-token': localStorage.token, email: localStorage.email}});
     const result = await response.json();
     this.setState({
@@ -25,7 +25,7 @@ class Account extends React.Component {
   }
 
   handleSubmit = (event) => {
-    fetch('http://localhost:8333/accounts', {
+    fetch('https://proj-api.frah19.me/accounts', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json; charset=utf-8',

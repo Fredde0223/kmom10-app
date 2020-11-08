@@ -19,7 +19,7 @@ class Objectsell extends React.Component {
 
   handleSubmit = async (event) => {
     event.preventDefault();
-    await fetch('http://localhost:8333/objects/sell', {
+    await fetch('https://proj-api.frah19.me/objects/sell', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json; charset=utf-8',
@@ -31,7 +31,7 @@ class Objectsell extends React.Component {
       });
 
     event.preventDefault();
-    await fetch('http://localhost:8333/accounts/sell', {
+    await fetch('https://proj-api.frah19.me/accounts/sell', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json; charset=utf-8',
@@ -46,7 +46,7 @@ class Objectsell extends React.Component {
   }
 
   async componentDidMount() {
-    const objUrl = 'http://localhost:8333/objects';
+    const objUrl = 'https://proj-api.frah19.me/objects';
     const objResponse = await fetch(objUrl, {method: "GET", headers: {'x-access-token': localStorage.token}});
     const objResult = await objResponse.json();
     this.setState({
@@ -62,7 +62,7 @@ class Objectsell extends React.Component {
         aluminiumValue: objResult.data[0].aluminiumValue
     });
 
-    const accUrl = 'http://localhost:8333/accounts';
+    const accUrl = 'https://proj-api.frah19.me/accounts';
     const accResponse = await fetch(accUrl, {method: "GET", headers: {'x-access-token': localStorage.token, email: localStorage.email}});
     const accResult = await accResponse.json();
     this.setState({

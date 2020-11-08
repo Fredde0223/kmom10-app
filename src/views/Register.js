@@ -12,7 +12,7 @@ class Register extends React.Component {
   }
 
   fetch1 = data => {
-    fetch('http://localhost:8333/register', {
+    fetch('https://proj-api.frah19.me/register', {
       method: 'POST',
       headers: {'Content-Type': 'application/json; charset=utf-8'},
       body: JSON.stringify(data)
@@ -23,7 +23,7 @@ class Register extends React.Component {
   }
 
   fetch2 = data => {
-    fetch('http://localhost:8333/accounts', {
+    fetch('https://proj-api.frah19.me/accounts', {
       method: 'POST',
       headers: {'Content-Type': 'application/json; charset=utf-8'},
       body: JSON.stringify(data)

@@ -16,7 +16,7 @@ class Login extends React.Component {
 
     event.preventDefault();
 
-    await fetch('http://localhost:8333/login', {
+    await fetch('https://proj-api.frah19.me/login', {
         method: 'POST',
         headers: {'Content-Type': 'application/json; charset=utf-8'},
         body: JSON.stringify(this.state)

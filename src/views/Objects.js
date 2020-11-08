@@ -1,8 +1,8 @@
 import React from 'react';
 import io from "socket.io-client";
-const ENDPOINT = "http://localhost:3000";
+const ENDPOINT = "https://proj-ss.frah19.me";
 const valSocket = io(ENDPOINT);
-const url = "http://localhost:8333/objects";
+const url = "https://proj-api.frah19.me/objects";
 
 class Objects extends React.Component {
   state = {};
